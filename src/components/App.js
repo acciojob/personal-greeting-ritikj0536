@@ -5,6 +5,7 @@ function Greeting() {
 
   return (
     <div>
+      <h1>Enter your name:</h1>
       <input
         type="text"
         placeholder="Enter your name"
