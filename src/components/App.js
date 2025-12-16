@@ -5,15 +5,13 @@ function Greeting() {
 
   return (
     <div>
-      <h1>Enter your name:</h1>
       <input
         type="text"
-        placeholder="Enter your name"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
 
-      {name && <h2>Hello, {name}!</h2>}
+      {name !== "" && <p>Hello {name}!</p>}
     </div>
   );
 }
